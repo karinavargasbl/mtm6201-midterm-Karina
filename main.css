@@ -1,0 +1,157 @@
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.banner {
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    background-color: #fcc7e8;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+  }
+  
+  .arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust circle size */
+    height: 50px; /* Adjust circle size */
+    background-color: #cf1f77; /* Pink color */
+    border-radius: 50%; /* Circle shape */
+    margin: 0 10px; /* Space between arrows */
+  }
+  
+  .arrow {
+    font-size: 24px;
+    color: white; /* Arrow color */
+    cursor: pointer;
+  }
+  
+  .content {
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: large;
+    padding: 0 10px; /* Optional: Add padding inside the content area */
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      flex-direction: column;
+      text-align: center;
+      width: 90%;
+    }
+    
+    .arrow-container {
+      margin: 10px 0;
+    }
+  }
+
+
+.about-section {
+    background-color: #f5f7ce; 
+    padding: 20px; 
+    display: flex; 
+}
+
+.about-section img {
+    max-width: 20%; 
+    margin-right: 20px; 
+    opacity: 0.8; /* Adjust opacity value as needed (0.0 to 1.0) */
+    transition: opacity 0.3s ease; /* Optional: Add transition for smooth opacity change */
+}
+
+.about-section img:hover {
+    opacity: 3; /* Optional: Increase opacity on hover */
+}
+
+
+.about-section h2 {
+    font-weight: bold; 
+    font-size: 54px;
+    margin-bottom: 10px; 
+    color: #640c82;
+}
+
+.about-section p {
+    font-size: 16px; 
+    margin: 0; 
+    font-family:'Open Sans', sans-serif;
+}
+
+.animated-box {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-left: 100px;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(242, 178, 243);
+    color: rgb(202, 14, 152);
+    font-size: 24px;
+    border-radius: 10px;
+    animation: animated-box 3s infinite;
+    cursor: pointer;
+}
+.animated-box:hover {
+  background-color: #8ee7f7; 
+}
+
+.animated-box:active {
+  transform: scale(4.5); 
+  background-color: rgb(192, 246, 112);
+  animation: active-box 2s infinite; 
+}
+
+@keyframes animated-box {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+@keyframes active-box {
+  0% { transform: scale(4.5) rotate(0deg); }
+  50% { transform: scale(4.5) rotate(180deg); }
+  100% { transform: scale(4.5) rotate(360deg); }
+}
+
+/* Responsive styles for the about-section */
+@media (max-width: 768px) {
+  .about-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .about-section img {
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .about-content {
+      padding: 10px;
+  }
+
+  .about-content h2 {
+      font-size: 20px;
+  }
+
+  .about-content p {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h2 {
+      font-size: 30px;
+  }
+
+  .about-content p {
+      font-size: 12px;
+  }
+
+  .animated-box {
+      padding: 8px 16px;
+      font-size: 14px;
+  }
+}

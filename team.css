@@ -1,0 +1,73 @@
+body{
+    background-color: #f8fabf;
+}
+
+
+h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 54px;
+    color: #8310aa;
+   
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box {
+    width: 60%;
+    margin-bottom: 20px;
+    background-color: #feb6ed;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.text h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+.text h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight:normal;
+    font-size: 20px;
+    text-decoration: underline #6c225b;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+
+
+.karina-image {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.alex-image {
+    width:auto;
+    margin-left: 20px;
+    height: auto;
+}
+
+.text {
+    flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+    .box {
+        flex-direction: column;
+    }
+
+    .john-image, .bob-image {
+        width: 100%;
+        margin: 0; 
+    }
+}
